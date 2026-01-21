@@ -1,6 +1,6 @@
 import re
 from email_validator import validate_email, EmailNotValidError
-from app.tools import save_booking_tool, send_email_tool
+from tools import save_booking_tool, send_email_tool
 
 REQUIRED_FIELDS = ["name", "email", "phone", "booking_type", "date", "time"]
 

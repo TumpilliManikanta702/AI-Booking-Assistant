@@ -1,7 +1,7 @@
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
-from app.config import get_email_config
+from config import get_email_config
 from db.database import add_customer, create_booking
 from langchain_core.tools import tool
 import streamlit as st
