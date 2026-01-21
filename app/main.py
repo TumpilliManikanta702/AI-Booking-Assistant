@@ -1,11 +1,16 @@
 import streamlit as st
-from app.chat_logic import detect_intent, get_llm
-from app.booking_flow import handle_booking_conversation
-from app.rag_pipeline import RAGPipeline
-from app.admin_dashboard import admin_page
-from app.tools import rag_query_tool
+from chat_logic import detect_intent, get_llm
+from booking_flow import handle_booking_conversation
+from rag_pipeline import RAGPipeline
+from admin_dashboard import admin_page
+from tools import rag_query_tool
 from db.database import init_db
 from langchain_core.messages import SystemMessage, HumanMessage
+from chat_logic import detect_intent, get_llm
+from booking_flow import handle_booking_conversation
+from rag_pipeline import RAGPipeline
+from admin_dashboard import admin_page
+
 
 # Page Config
 st.set_page_config(page_title="AI Booking Assistant", layout="wide")
