@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-from db.database import get_all_bookings
+from database import get_all_bookings
 
 def admin_page():
     st.header("Admin Dashboard - Bookings Overview")

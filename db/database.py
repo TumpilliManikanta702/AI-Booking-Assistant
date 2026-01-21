@@ -1,6 +1,6 @@
 import sqlite3
 import pandas as pd
-from db.models import CREATE_CUSTOMERS_TABLE, CREATE_BOOKINGS_TABLE
+from database import CREATE_CUSTOMERS_TABLE, CREATE_BOOKINGS_TABLE
 import os
 
 DB_NAME = "booking_assistant.db"
