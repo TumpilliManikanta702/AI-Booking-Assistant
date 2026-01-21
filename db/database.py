@@ -1,3 +1,6 @@
+import sys
+import os
+sys.path.append(os.path.dirname(__file__))
 import sqlite3
 import pandas as pd
 from database import CREATE_CUSTOMERS_TABLE, CREATE_BOOKINGS_TABLE

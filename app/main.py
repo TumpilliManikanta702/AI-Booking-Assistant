@@ -1,3 +1,6 @@
+import sys
+import os
+sys.path.append(os.path.dirname(__file__))
 import streamlit as st
 from chat_logic import detect_intent, get_llm
 from booking_flow import handle_booking_conversation

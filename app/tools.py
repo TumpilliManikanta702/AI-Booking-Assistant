@@ -1,3 +1,10 @@
+import sys
+import os
+
+DB_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), "../db"))
+if DB_PATH not in sys.path:
+    sys.path.append(DB_PATH)
+
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
@@ -6,10 +13,7 @@ from database import add_customer, create_booking
 from langchain_core.tools import tool
 import streamlit as st
 
-import sys
-import os
 
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../db")))
 
 @tool
 def rag_query_tool(query: str):
