@@ -1,6 +1,6 @@
 from langchain_groq import ChatGroq
 from langchain_openai import ChatOpenAI
-from app.config import get_llm_config
+from config import get_llm_config
 from langchain_core.messages import SystemMessage, HumanMessage
 
 def get_llm():
